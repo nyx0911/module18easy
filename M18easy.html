@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2D Transformation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            border-radius: 15px;
+
+            /* CSS Transition */
+            transition: transform 0.5s ease;
+        }
+
+        /* CSS 2D Transformation on Hover */
+        .box:hover {
+            transform: rotate(15deg) scale(1.2);
+            background-color: #2ecc71;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        Hover Over Me!
+    </div>
+
+</body>
+</html>
